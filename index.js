@@ -1,4 +1,3 @@
-'use strict'
 // 
 // Script to connect to the Nova SDS011, read PM values from the serial port and write them to the console.
 // Usage: `node index.js /dev/ttyUSB0`
@@ -28,5 +27,5 @@ serial.on('data', function (data) {
         return;
     }
 
-    console.info("pm2.5: " + pmValues.pm2_5 + "\tpm10: " + pmValues.pm10);
+    console.info('pm2.5: ' + pmValues.pm2_5 + '\tpm10: ' + pmValues.pm10);
 });
